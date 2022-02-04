@@ -145,9 +145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63e1bc89683a46bebf78b4a38a465a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xForce: 1
-  zForce: 1
-  yForce: 200
+  xForce: 2
+  zForce: 2
+  yForce: 220
 --- !u!135 &164074255
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1002,6 +1002,8 @@ MonoBehaviour:
   level: 1
   cannons: []
   checkPoints: []
+  lastLevel: 0
+  gameOver: {fileID: 0}
   Paused: 0
 --- !u!4 &891089544
 Transform:

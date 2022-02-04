@@ -4297,9 +4297,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63e1bc89683a46bebf78b4a38a465a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xForce: 1
-  zForce: 1
-  yForce: 200
+  xForce: 2
+  zForce: 2
+  yForce: 220
 --- !u!4 &1575046623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4a1142b17f64bbc40871f76529421f77, type: 3}
@@ -5181,6 +5181,8 @@ MonoBehaviour:
   - {fileID: 200708010}
   - {fileID: 1994806405}
   checkPoints: []
+  lastLevel: 0
+  gameOver: {fileID: 0}
   Paused: 0
 --- !u!4 &1876470926
 Transform:
