@@ -9,53 +9,59 @@ public class Roller : MonoBehaviour
 
    
         //Force Variables 
-        public float xForce = 10.0f;
-        public float zForce = 10.0f;
-        public float yForce = 500.0f;
+        public float xForce = 0;
+        public float zForce = 0;
+        public float yForce = 0;
 
         //use this for initialization  
 
         void Start()
         {
-
+        
         }
-        //Update is called once per frame  
-        void Update()
+    private void Update()
+    {
+        float y = 0.0f;
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //this is for x axis' movement  
+            y = yForce;
+        }
+        GetComponent<Rigidbody>().AddForce(0, y, 0);
+    }
 
-            float x = 0.0f;
-            if (Input.GetKey(KeyCode.A))
-            {
-                x = x - xForce;
-            }
+    //Update is called once per frame  
+    void FixedUpdate()
+        {
+        //this is for x axis' movement  
 
-            if (Input.GetKey(KeyCode.D))
-            {
-                x = x + xForce;
-            }
+        float x = 0.0f;
+        if (Input.GetKey(KeyCode.A))
+        {
+            x = x - xForce;
+        }
 
-            //this is for z axis' movement  
+        if (Input.GetKey(KeyCode.D))
+        {
+            x = x + xForce;
+        }
 
-            float z = 0.0f;
-            if (Input.GetKey(KeyCode.S))
-            {
-                z = z - zForce;
-            }
+        //this is for z axis' movement  
 
-            if (Input.GetKey(KeyCode.W))
-            {
-                z = z + zForce;
-            }
-            //this is for z axis' movement  
+        float z = 0.0f;
+        if (Input.GetKey(KeyCode.S))
+        {
+            z = z - zForce;
+        }
 
-            float y = 0.0f;
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                y = yForce;
-            }
+        if (Input.GetKey(KeyCode.W))
+        {
+            z = z + zForce;
+        }
+        //this is for z axis' movement  
 
-            GetComponent<Rigidbody>().AddForce(x, y, z);
+      
+
+        GetComponent<Rigidbody>().AddForce(x, 0, z);
         }
     
 
