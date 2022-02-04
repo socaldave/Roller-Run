@@ -30,6 +30,9 @@ public class SimpleCollectibleScript : MonoBehaviour {
 
 	}
 
+	/**
+    * Call on Collected in Gamemanager 
+    */
 	void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("Ran through collectible");
@@ -38,6 +41,9 @@ public class SimpleCollectibleScript : MonoBehaviour {
 		Collect();
 	}
 
+	/**
+    * Play collect sound/effect then destroy gameobject 
+    */
 	public void Collect()
 	{
 		Debug.Log("Place2");
@@ -51,7 +57,10 @@ public class SimpleCollectibleScript : MonoBehaviour {
 		Destroy();
 	}
 
-    public void Destroy()
+	/**
+    * Destroy Gameobject
+    */
+	public void Destroy()
     {
 		Destroy(gameObject);
 	}

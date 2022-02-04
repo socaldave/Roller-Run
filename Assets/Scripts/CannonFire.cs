@@ -21,7 +21,10 @@ public class CannonFire : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+
+    /**
+    * Fire a ball at set intercval 
+    */
     void Update()
     {
         time += Time.deltaTime;
@@ -38,6 +41,9 @@ public class CannonFire : MonoBehaviour
         }
     }
 
+    /**
+    * Instantiate cannonball and fire using physics force
+    */
     void FireBall()
     {
         GameObject ball = Instantiate(projectile, projectileSpawnPoint.transform.position,

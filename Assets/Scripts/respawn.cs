@@ -18,6 +18,9 @@ public class respawn : MonoBehaviour
         
     }
 
+    /**
+    * Respawn player 
+    */
     private void OnTriggerEnter(Collider other)
     {
         

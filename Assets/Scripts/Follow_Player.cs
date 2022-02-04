@@ -7,6 +7,7 @@ public class Follow_Player : MonoBehaviour
    
     public Transform player;
 
+    //Camera offsets
     public float x;
     public float y;
     public float z;
