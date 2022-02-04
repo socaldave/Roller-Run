@@ -28,6 +28,10 @@ public class Level : MonoBehaviour
 
     public List<Vector3> checkPoints;
 
+
+    public bool lastLevel;
+
+    public GameObject gameOver;
     //Pause state
     public Boolean Paused;
 
@@ -76,7 +80,12 @@ public class Level : MonoBehaviour
         mainMenu.SetActive(true);
         nextLevel.SetActive(true);
 
-        if(cannons.Count != 0)
+        if (lastLevel)
+        {
+            gameOver.SetActive(true);
+        }
+
+        if (cannons.Count != 0)
         {
             foreach(GameObject cannon in cannons)
             {
@@ -84,6 +93,8 @@ public class Level : MonoBehaviour
                 fire.fire = false;
             }
         }
+
+        
         
     }
 
