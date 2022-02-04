@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+   /**
+   * level Class
+   * Used to command the flow of the game. Every level should have 1 Level manager component
+   * 
+   * Collectible, checkpoints, can all be controlled from here
+   */
 public class Level : MonoBehaviour
 {
 

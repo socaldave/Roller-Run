@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+   * Respawn component for the worldbounds 
+   */
 public class respawn : MonoBehaviour
 {
     private Level gm;

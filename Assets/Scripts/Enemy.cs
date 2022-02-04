@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+   * Enemy Component for the enemy objects
+   */
 public class Enemy : MonoBehaviour
 {
     private Level manager;

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ /**
+    *Checkpoint class used to save user position at specific locations.
+    */
 public class Checkpoint : MonoBehaviour
 {
     private Level gm;
@@ -24,6 +26,9 @@ public class Checkpoint : MonoBehaviour
         }
     }
 
+
+
+    //  if Active call onCollected on GameObjected
     void OnTriggerEnter(Collider other)
     {
         if (active)
@@ -39,6 +44,7 @@ public class Checkpoint : MonoBehaviour
         
     }
 
+    //save position and pass to the game manager
     void Collect()
     {
         Transform thisTransform = gameObject.transform;
