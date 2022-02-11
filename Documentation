@@ -1,0 +1,17 @@
+Verwendete Quellen
+1) https://learn.unity.com/tutorial/update-and-fixedupdate#
+2) https://learn.unity.com/project/roll-a-ball
+3) https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/QuickStartGuide.htm
+4) https://docs.unity3d.com/ScriptReference/Rigidbody.AddForce.html
+5) https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
+
+
+Tutorial:
+W - Move Foward
+A - Move Left
+S - Move Backward
+D - Move Right
+
+SPACE - Jump
+
+ESC - Open InGame Menu
